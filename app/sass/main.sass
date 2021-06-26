@@ -1,0 +1,189 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "animation-baner"
+
+body
+	margin: 0
+	padding: 0	
+	font-family: $roboto
+	background-color: $bg-color-content
+	overflow-y: auto
+	-webkit-overflow-scrolling: touch
+
+input::-webkit-input-placeholder
+	text-indent: 0px
+	transition: text-indent 0.3s ease
+	color: $bg-color-content
+input:focus::-webkit-input-placeholder
+	text-indent: 1500px
+	transition: text-indent 0.3s ease
+	
+#top-baner
+	width: 100%
+	height: 100%
+	max-height: 450px
+	min-height: 450px
+	overflow: hidden
+	background-image: url('../img/baner-top.png')
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+	position: relative
+	animation: drift $animation infinite
+	border-bottom: 10px solid $grey
+	&::after
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background: rgba(0,0,0,.5)
+		z-index: 2
+	.logo-add_button
+		display: flex
+		justify-content: row
+		align-items: flex-start
+		justify-content: space-between
+		padding: 15px 35px 0
+		z-index: 3
+		position: relative
+		.add_button
+			padding: 15px 20px
+			background-color: rgba(85, 85, 85, .6)
+			border-radius: 5px
+			display: flex
+			align-items: center
+			justify-content: center	
+			text-transform: uppercase
+			text-decoration: none
+			box-shadow: none
+			output: none
+			color: $red
+			transition: $transition
+			.svg-icon
+				height: 15px
+				width: 15px
+				fill: $red
+				margin-right: 5px
+				transition: $transition
+			&:hover
+				background-color: $red
+				color: $white
+				.svg-icon
+					fill: $white
+	.search-form
+		position: absolute
+		left: 100px
+		right: 100px
+		top: 150px	
+		z-index: 3	
+		h1
+			font: normal 600 32px/40px $roboto
+			color: $white
+			text-transform: uppercase
+		&__row	
+			display: flex
+			flex-direction: row
+			align-items: center
+			input
+				width: calc(84% - 15px)	
+				margin-right: 15px
+				padding: 15px 25px
+				box-shadow: none
+				outline: none
+				appearance: none
+				border-radius: 5px
+				border: 0
+				background-color: rgba(85, 85, 85, .8)
+				color: $white
+			button
+				width: 15%
+				height: 45px
+				padding: 15px
+				border-radius: 5px
+				background-color: $red
+				color: $white
+				box-shadow: none
+				outline: none
+				appearance: none
+				border: 0
+				transition: $transition
+				text-transform: uppercase
+				font: normal 400 20px/20px $roboto
+				&:hover
+					background-color: rgba(85, 85, 85, .6)
+					cursor: pointer
+
+.logo
+	display: flex
+	img
+		width: 150px
+		height: 50px			
+
+// Filter and content film
+#filter-content
+	background-color: $bg-color-content
+	width: calc(100% - 70px)
+	padding: 15px 35px
+	.filter
+		display: flex
+	.content-film
+		display: grid
+		grid-template-columns: repeat(3, 1fr)
+		grid-template-rows: auto
+		grid-column-gap: 35px
+		grid-row-gap: 35px
+		.one-movie
+			width: 100%
+			position: relative
+			.actions
+				position: absolute
+				top: 15px
+				right: 15px
+				display: none
+				justify-content: center
+				align-items: center
+				width: 25px
+				height: 25px
+				background-color: $grey
+				border-radius: 100%
+				.svg-icon
+					width: 15px
+					height: 15px
+					fill: $white
+			picture
+				display: block
+				img
+					width: 100%
+					height: 100%
+					max-height: 450px
+					min-height: 450px
+					object-fit: cover
+					object-position: top center
+			.info-movie
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				align-items: flex-start
+				margin-top: 20px	
+				&__name
+					color: $grey			
+			&:hover
+				.actions
+					display: flex
+					cursor: pointer
+// Footer
+footer
+	padding: 15px 35px
+	display: flex
+	align-items: center
+	justify-content: center
+	background-color: $grey					
+
+
+
+
+
+@import "media" // Always at the end
