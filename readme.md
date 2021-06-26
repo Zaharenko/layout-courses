@@ -1,4 +1,4 @@
-<h2>StopStigma</h2>
+<h2>Test layout</h2>
 
 <ol>
 	<li>Install Node Modules: <strong>npm i</strong>;</li>
