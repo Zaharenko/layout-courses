@@ -1,6 +1,73 @@
 @import "vars"
 
-@media (max-width: 1025px)
-  footer
-    width: 100%
-    margin-left: 0
+@media (min-width: 2000px)
+  #top-baner 
+    .search-form
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+    .search-form__row
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      width: 100%
+      input
+        max-width: 350px
+        margin-right: 0
+      button
+        margin-top: 25px
+        max-width: 150px  
+
+  #filter-content 
+    .content-film 
+      .one-movie 
+        picture 
+          img
+            max-height: 650px  
+
+@media (max-width: 1000px)
+  #filter-content 
+    .content-film
+      grid-template-columns: repeat(2,1fr)
+
+  #top-baner 
+    .search-form
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+    .search-form__row
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      width: 100%
+      input
+        max-width: 350px
+        margin-right: 0
+      button
+        margin-top: 25px
+        max-width: 150px  
+        width: 100%
+
+@media (max-width: 767px)
+  #filter-content 
+    .content-film
+      grid-template-columns: repeat(1,1fr)   
+
+  #top-baner 
+    .search-form
+      left: 35px
+      right: 35px
+      top: 100px
+    .logo-add_button 
+      .add_button 
+        span    
+          display: none
+
+  #filter-content 
+    .filter    
+      flex-direction: column-reverse
+      .filter__list 
+        margin-top: 25px   
+

@@ -13,7 +13,7 @@
 	<meta name="Netflix" content="app-id=id, app-argument=url">
 
 	<!-- Template Basic Images Start -->
-	<link rel="icon" href="img/favicon/favicon.png">
+	<link rel="icon" href="img/netflix.png">
 	<!-- Template Basic Images End -->
 
 	<!-- Custom Browsers Color Start -->
@@ -72,7 +72,7 @@
 				<svg class="svg-icon">
 					<use xlink:href="#plus"></use>
 				</svg>
-				add movie
+				add <span>movie</span>
 			</a>
 		</div>
 		<form class="search-form">
@@ -91,10 +91,25 @@
 	<!-- Filter and content film -->
 	<section id="filter-content">
 		<div class="filter">
-			filter
+			<ul class="filter__list">
+				<li class="active-list">All</li>
+				<li>Documentaru</li>
+				<li>Comedy</li>
+				<li>Horror</li>
+				<li>Crime</li>
+			</ul>
+			<div class="filter__sort">
+			<span>Sort by</span>
+			<select class="select" name="" id="">
+				<option disabled selected value="0">Realese date</option>
+				<option value="1">2010</option>
+				<option value="2">2001</option>
+			</select>
+			</div>
 		</div>
+		<p class="count-movie"><span>39</span> movie found</p>
 		<div class="content-film popup-gallery'">
-			<div class="one-movie">
+			<a href="#" class="one-movie">
 				<picture>
 					<source srcset="./img/movie/movie1.webp" type="image/webp">
 					<source srcset="./img/movie/movie1.jpeg" type="image/jpeg"> 
@@ -114,8 +129,8 @@
 						<use xlink:href="#dots"></use>
 					</svg>
 				</span>
-			</div>
-			<div class="one-movie">
+			</ф>
+			<a href="#" class="one-movie">
 				<picture>
 					<source srcset="./img/movie/movie2.webp" type="image/webp">
 					<source srcset="./img/movie/movie2.jpeg" type="image/jpeg"> 
@@ -130,8 +145,13 @@
 						<time datetime="2001">2001</time>
 					</div>
 				</div>
-			</div>
-			<div class="one-movie">
+				<span class="actions">
+					<svg class="svg-icon">
+						<use xlink:href="#dots"></use>
+					</svg>
+				</span>
+			</ф>
+			<a href="#" class="one-movie">
 				<picture>
 					<source srcset="./img/movie/movie3.webp" type="image/webp">
 					<source srcset="./img/movie/movie3.jpeg" type="image/jpeg"> 
@@ -146,8 +166,13 @@
 						<time datetime="2001">2001</time>
 					</div>
 				</div>
-			</div>
-			<div class="one-movie">
+				<span class="actions">
+					<svg class="svg-icon">
+						<use xlink:href="#dots"></use>
+					</svg>
+				</span>
+			</ф>
+			<a href="#" class="one-movie">
 				<picture>
 					<source srcset="./img/movie/movie4.webp" type="image/webp">
 					<source srcset="./img/movie/movie4.jpeg" type="image/jpeg"> 
@@ -162,8 +187,13 @@
 						<time datetime="2001">2001</time>
 					</div>
 				</div>
-			</div>
-			<div class="one-movie">
+				<span class="actions">
+					<svg class="svg-icon">
+						<use xlink:href="#dots"></use>
+					</svg>
+				</span>
+			</ф>
+			<a href="#" class="one-movie">
 				<picture>
 					<source srcset="./img/movie/movie5.webp" type="image/webp">
 					<source srcset="./img/movie/movie5.jpeg" type="image/jpeg"> 
@@ -178,8 +208,13 @@
 						<time datetime="2001">2001</time>
 					</div>
 				</div>
-			</div>
-			<div class="one-movie">
+				<span class="actions">
+					<svg class="svg-icon">
+						<use xlink:href="#dots"></use>
+					</svg>
+				</span>
+			</ф>
+			<a href="#" class="one-movie">
 				<picture>
 					<source srcset="./img/movie/movie6.webp" type="image/webp">
 					<source srcset="./img/movie/movie6.jpeg" type="image/jpeg"> 
@@ -194,7 +229,12 @@
 						<time datetime="2001">2001</time>
 					</div>
 				</div>
-			</div>
+				<span class="actions">
+					<svg class="svg-icon">
+						<use xlink:href="#dots"></use>
+					</svg>
+				</span>
+			</ф>
 		</div>
 	</section>
 	<!-- End filter and content film -->
